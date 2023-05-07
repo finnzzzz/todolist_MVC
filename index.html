@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MVC-todolist</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-1/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>todolist - mvc</h1>
+    <div id="todo">
+      <input
+        type="text"
+        id="add-item"
+        name="item"
+        placeholder="add an item"
+        onkeydown="view.addItem(event)"
+      />
+      <ul id="list"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

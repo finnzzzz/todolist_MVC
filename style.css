@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(
+    200deg,
+    rgb(237, 238, 255) 0%,
+    rgb(227, 240, 253) 55%,
+    rgb(253, 222, 194) 100%
+  );
+}
+
+h1 {
+  text-align: center;
+  color: #9c9c9c;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+#todo {
+  margin: auto;
+  width: 30%;
+  min-width: 300px;
+  background: white;
+  box-shadow: 0px 4px 5px -9px black;
+  border-radius: 6px;
+  max-height: 60vh;
+  overflow: auto;
+}
+
+#list {
+  width: 100%;
+  padding: 0;
+}
+
+#list li:hover {
+  background: #eee;
+}
+
+#list li.item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 5px 20px;
+}
+
+#list li.item span {
+  font-weight: 100;
+  font-size: 18px;
+  flex-grow: 1;
+  color: #595959;
+}
+
+#list li a {
+  padding: 10px;
+  cursor: pointer;
+}
+
+#list li.item i {
+  color: #cecece;
+}
+
+#list li.item a:hover i {
+  color: grey;
+  transition: all 100ms linear;
+}
+
+input {
+  border-radius: 0px;
+  border: none;
+  background: #f6f4f4;
+  border-bottom: 2px solid #e5e5e5;
+  width: 100%;
+  font-size: 20px;
+  color: #696969;
+  padding: 15px 30px;
+}
+
+::-webkit-input-placeholder {
+  color: #bbb;
+}
+
+input#add-item:focus {
+  border-bottom: 2px solid #a3d1ff;
+  outline: none;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 40px;
+  padding: 5px 15px;
+  font-weight: 900;
+  color: #0000000a;
+}
